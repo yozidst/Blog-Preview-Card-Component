@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
 
 :root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
 
-
-
-
-    
+    --fs: 16px;
+    --ff: "Figtree", serif;
+    --fw-semi-bold: 600;
+    --fw-bold: 800;
 }
 
 *, 
@@ -19,7 +24,79 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: ;
-    font-size: ;
-    background-color: ;
+    font-family: var(--ff);
+    font-size: var(--fs);
+    background-color: var(--yellow);
+    font-weight: var(--fw-semi-bold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 420px;
+    height: 550px;
+    padding: 25px;
+    background-color: var(--white);
+    border-radius: 30px;
+    border: solid 2px var(--black);
+    box-shadow: 10px 10px 0px var(--black);
+}
+
+.content-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.tab {
+    margin-top: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    padding: 6px 10px;
+    width: fit-content;
+}
+
+.date {
+    font-size: 1.05rem;
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: var(--fw-bold);
+}
+
+
+.text {
+    color: var(--grey);
+    font-size: 1.05em;
+    line-height: 1.565;
+}
+
+.footer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+    .content {
+        width: 340px;
+    }
 }
