@@ -35,12 +35,12 @@ body {
 }
 
 .content {
-    width: 420px;
-    height: 550px;
+    width: 400px;
+    height: 535px;
     padding: 25px;
     background-color: var(--white);
-    border-radius: 30px;
-    border: solid 2px var(--black);
+    border-radius: 20px;
+    border: solid 1px var(--black);
     box-shadow: 10px 10px 0px var(--black);
 }
 
@@ -61,7 +61,7 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: var(--fw-bold);
-    padding: 6px 10px;
+    padding: 8px 10px;
     width: fit-content;
 }
 
@@ -70,16 +70,22 @@ body {
 }
 
 h1 {
-    margin-top: 5px;
+    margin-top: 6px;
     font-size: 1.6rem;
     font-weight: var(--fw-bold);
 }
 
-
+h1:hover {
+    text-shadow: 2px 1px 0.8px var(--black);
+    cursor: pointer;
+    transform: scale(1.03);
+    color: var(--yellow);
+    transition: ease in 0.1s;
+}
 .text {
     color: var(--grey);
-    font-size: 1.05em;
-    line-height: 1.565;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .footer {
@@ -90,10 +96,23 @@ h1 {
 }
 
 .profile-img {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
+
+.name {
+    font-size: .880rem;
+    font-weight: var(--fw-bold);
+}
+
+.name:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--grey);
+    transition: ease in 0.1s;
+}
+
 
 @media only screen and (min-width: 375px) and (max-width: 500px) {
     .content {
